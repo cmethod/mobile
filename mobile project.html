@@ -1,0 +1,100 @@
+<head>
+  <script src="/bower/webcomponentsjs/webcomponents-lite.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="import" href="/bower/iron-icons/iron-icons.html">
+  <link rel="import" href="/bower/paper-icon-button/paper-icon-button.html">
+  <link rel="import" href="/bower/paper-button/paper-button.html">
+  <link rel="import" href="/bower/paper-drawer-panel/paper-drawer-panel.html">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+</body>
+
+<template name="layout1">
+  <paper-drawer-panel id="paperDrawerPanel">
+    <div drawer>
+      <div class="menu">
+        <div id="menu-heading-projects" paper-drawer-toggle>projects</div>
+          <a href="/about-me"><div id="about-me" paper-drawer-toggle>about me</div></a>
+          <div class="menuOption">
+          <a href="/projects-morningsignout"><div paper-drawer-toggle>morningsignout</div></a>
+          <a href="/projects-desktop"><div paper-drawer-toggle>desktop</div></a>
+        </div>
+      </div>
+    </div>
+    <div main>
+      {{> Template.dynamic template=top}} {{> Template.dynamic template=main}}
+    </div>
+  </paper-drawer-panel>
+</template>
+
+
+<template name="navigation">
+  <title> crystal chen </title>
+  <div>
+    <div class="navContainer">
+      <div class="navBtn">
+        <paper-icon-button icon="menu" alt="menu" title="menu" class="bigWhite" paper-drawer-toggle></paper-icon-button>
+      </div>
+
+      <div id="logo">
+        <a href="/">
+          <img src="http://i521.photobucket.com/albums/w335/666crystalmeth/crystal%20chen%20logo%20white_zpszvplpzs7.png" width="120px" height="110px"> </a>
+      </div>
+    </div>
+  </div>
+</template>
+
+
+<template name="home">
+  <a href="/about-me">
+  <div class="threejscube-container">
+  </div>
+  </a>
+</template>
+
+<template name="projects-morningsignout">
+  <div class="msoContainer">
+    <p id="smaller-work-for-mso">currently doing</p>
+    <p id="work-for-mso">web development </p>
+    <div id="smaller-work-for-mso" class='outsideLink'><a href="http://morningsignout.com/author/crystalchen/">for morningsignout.com</a></div>
+    <div class="msoContainerViewport">
+      <p id="about-mso">"science, medicine, for everyone"</p>
+      <a href="http://morningsignout.com/author/crystalchen/">
+      <img src="http://i521.photobucket.com/albums/w335/666crystalmeth/morning%20sign%20out%20webpage_zps0wwzogot.png" id="mso-webpage" />
+      </a>
+    </div>
+  </div>
+</template>
+
+<template name="projects-desktop">
+  <div class="desktopContainer">
+    <div id="about-desktop" class='outsideLink'><a href="http://crystalsproject.meteor.com">desktop playthings demo</a></div>
+    <div class="test">test</div>
+    <div class="desktopDemoContainer">
+      <div id="desktopDemo" class="show">
+        <img src="http://i521.photobucket.com/albums/w335/666crystalmeth/webpage%201_zpssualcjjc.png" />
+        <img src="http://i521.photobucket.com/albums/w335/666crystalmeth/webpage%202_zpscdlz5zmf.png" />
+        <img src="http://i521.photobucket.com/albums/w335/666crystalmeth/animate_zpsc5ibhuq6.png" />
+      </div>
+      <div id="aboutDesktopDemo" class="hide"> a collection made in the month of August 2015
+      </div>
+    </div>
+  </div>
+</template>
+
+
+<template name="about-me">
+    <a href="/">
+  <div id="about-me-info">
+   <div>self-learning: web dev. graphic animation.
+     <br><br>
+   B.A. in progress at UCLA</div>
+ </div>
+ </a>
+</template>

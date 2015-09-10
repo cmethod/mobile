@@ -1,0 +1,264 @@
+
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  background: url("http://i521.photobucket.com/albums/w335/666crystalmeth/background%20ocean%20mobile%20dim_zpsvbdjicw9.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.hide {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+.show {
+  opacity: 100%;
+  transition: opacity 300ms;
+}
+
+paper-icon-button {
+  margin-left: 30px;
+  display: block;
+  width: 24px;
+  text-align: center;
+}
+paper-icon-button.bigWhite {
+  color: grey;
+  margin-left: 0px;
+  width: 40px;
+  height: 40px;
+}
+paper-icon-button.bigWhite.clicked {
+  color: grey;
+}
+paper-icon-button.bigWhite::shadow {
+  width: 40px;
+  height: 40px;
+  color: black;
+}
+paper-icon-button.bigWhite #icon {
+  width: 40px;
+  height: 40px;
+}
+.navBtn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2
+}
+.navContainer {}
+#logo {
+  clear: both;
+  margin: auto;
+  text-align: center;
+}
+div #logo {
+  width: 150px;
+}
+#paperDrawerPanel [main] {
+  background-color: var(--google-grey-100);
+}
+#paperDrawerPanel [drawer] {
+  border-right: 1px solid var(--google-grey-300);
+}
+#paperDrawerPanel[right-drawer] [drawer] {
+  border-left: 1px solid var(--google-grey-300);
+}
+paper-button {
+  color: white;
+  margin: 10px;
+  background-color: var(--google-blue-700);
+  white-space: nowrap;
+}
+.threejscube-container {
+  margin-top: -100px;
+  position: relative;
+}
+.hide {
+  display: none;
+}
+.menu {
+  position: relative;
+}
+#menu-heading-projects {
+  font-size: 28px;
+  font-family: courier;
+  margin-left: 70px;
+  margin-top: 15px;
+}
+.menuOption {
+  position: absolute;
+  font-size: 28px;
+  font-family: courier;
+  top:70px;
+  margin-left: 10px;
+  line-height: 60px;
+}
+.menuOption a {
+  text-decoration: none;
+  color: grey;
+}
+.menuOption a:visited {
+  text-decoration: none;
+  color: grey;
+}
+.menuOption a:hover {
+  text-decoration: none;
+  color: black;
+}
+.menuOption a:focus {
+  text-decoration: none;
+  color: black;
+}
+.menuOption a:hover, .navBtn:active {
+  text-decoration: none;
+  color: black;
+}
+
+#about-me {
+  position: absolute;
+  font-size: 28px;
+  font-family: courier;
+  margin-left: 70px;
+  margin-top: 250px;
+}
+a #about-me {
+  text-decoration: none;
+  color: black;
+}
+#about-me a:visited {
+  text-decoration: none;
+  color: black;
+}
+#about-me a:hover {
+  text-decoration: none;
+  color: grey;
+}
+#about-me a:focus {
+  text-decoration: none;
+  color: black;
+}
+#about-me a:hover, .navBtn:active {
+  text-decoration: none;
+  color: black;
+}
+.menuOption {
+  position: absolute;
+  font-size: 28px;
+  font-family: courier;
+  top:70px;
+  margin-left: 10px;
+  line-height: 60px;
+}
+.ousideLink {
+  text-align: center;
+}
+.outsideLink a {
+  text-decoration: none;
+  color: white;
+}
+.outsideLink a:visited {
+  text-decoration: none;
+  color: white;
+}
+.outsideLink + a:hover {
+  text-decoration: none;
+  color: grey;
+}
+.outsideLink a:focus {
+  text-decoration: none;
+  color: white;
+}
+.outsideLink a:hover, .outsideLink:active {
+  text-decoration: none;
+  color: grey;
+}
+
+.msoContainer {
+  margin-top: 7vw;
+}
+.msoContainerViewport{
+  overflow: auto;
+  height: 65vw;
+}
+#work-for-mso {
+  font-size: 28px;
+  font-family: courier;
+  color: white;
+  padding: 0 40px;
+  text-align: center;
+  margin-top: -10px;
+}
+#smaller-work-for-mso {
+  font-size: 18px;
+  font-family: courier;
+  color: white;
+  padding: 0 40px;
+  text-align: center;
+  margin-top: -22px;
+}
+
+#about-mso {
+  font-size: 16px;
+  font-family: courier;
+  color: grey;
+  padding: 0 40px;
+  text-align: center;
+  font-family: arial;
+  letter-spacing: 9px;
+    color: cornflowerblue;
+    margin-bottom: 9px;
+    padding-top: 5px;
+}
+
+.msoContainer a {
+  display: inline-block;
+  text-align: center;
+}
+#mso-webpage {
+  height: 75%;
+  width: 75%;
+}
+.desktopContainer {
+  margin-top:45px;
+  display: inline-block;
+  text-align: center;
+}
+#about-desktop {
+  font-size: 28px;
+  font-family: courier;
+  color: white;
+  padding: 0 75px;
+  text-align: center;
+  margin-top: -45px;
+}
+.desktopDemoContainer {
+  position: relative;
+  margin: 0 7vw;
+height: 73vw;
+}
+#desktopDemo {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  overflow: auto;
+  height: 70vw;
+  display: block;
+}
+#aboutDesktopDemo {
+  position: absolute;
+}
+.desktopContainer img {
+  height: 70%;
+  width: 90%;
+}
+#about-me-info {
+  font-size: 5vw;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 4vw;
+  color: white;
+  padding: 0 75px;
+  text-align: center;
+  margin-top: 1vw;
+  line-height: 11vw;
+}
