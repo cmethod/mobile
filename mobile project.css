@@ -2,9 +2,9 @@
 body {
   margin: 0;
   background-repeat: no-repeat;
-  background: url("http://i521.photobucket.com/albums/w335/666crystalmeth/background%20ocean%20mobile%20dim_zpsvbdjicw9.jpg");
+  background-image: url("/pictures/background-ocean-mobile-dim.jpg");
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 .hide {
   opacity: 0;
@@ -69,9 +69,11 @@ paper-button {
   background-color: var(--google-blue-700);
   white-space: nowrap;
 }
+.cubeContainer {
+  text-align: center;
+}
 .threejscube-container {
-  margin-top: -100px;
-  position: relative;
+
 }
 .hide {
   display: none;
@@ -119,7 +121,7 @@ paper-button {
   font-size: 28px;
   font-family: courier;
   margin-left: 70px;
-  margin-top: 250px;
+  margin-top: 350px;
 }
 a #about-me {
   text-decoration: none;
@@ -138,6 +140,34 @@ a #about-me {
   color: black;
 }
 #about-me a:hover, .navBtn:active {
+  text-decoration: none;
+  color: black;
+}
+
+#the-blog {
+  position: absolute;
+  font-size: 28px;
+  font-family: courier;
+  margin-left: 70px;
+  margin-top: 250px;
+}
+a #the-blog {
+  text-decoration: none;
+  color: black;
+}
+#the-blog a:visited {
+  text-decoration: none;
+  color: black;
+}
+#the-blog a:hover {
+  text-decoration: none;
+  color: grey;
+}
+#the-blog a:focus {
+  text-decoration: none;
+  color: black;
+}
+#the-blog a:hover, .navBtn:active {
   text-decoration: none;
   color: black;
 }
@@ -178,23 +208,24 @@ a #about-me {
 }
 .msoContainerViewport{
   overflow: auto;
-  height: 65vw;
+  height: 45vh;
+  text-align: center;
 }
 #work-for-mso {
-  font-size: 28px;
+  font-size: 5vh;
   font-family: courier;
   color: white;
-  padding: 0 40px;
+  padding: 0 10px;
   text-align: center;
-  margin-top: -10px;
+  margin-top: -3vh;
 }
 #smaller-work-for-mso {
-  font-size: 18px;
+  font-size: 3vh;
   font-family: courier;
   color: white;
   padding: 0 40px;
   text-align: center;
-  margin-top: -22px;
+  margin-top: -4vh;
 }
 
 #about-mso {
@@ -220,11 +251,10 @@ a #about-me {
 }
 .desktopContainer {
   margin-top:45px;
-  display: inline-block;
   text-align: center;
 }
 #about-desktop {
-  font-size: 28px;
+  font-size: 5vh;
   font-family: courier;
   color: white;
   padding: 0 75px;
@@ -238,11 +268,11 @@ height: 73vw;
 }
 #desktopDemo {
   position: absolute;
-  display: inline-block;
   text-align: center;
   overflow: auto;
-  height: 70vw;
+  height: 50vh;
   display: block;
+  top: 6vh;
 }
 #aboutDesktopDemo {
   position: absolute;
@@ -252,13 +282,13 @@ height: 73vw;
   width: 90%;
 }
 #about-me-info {
-  font-size: 5vw;
+  font-size: 5vh;
   font-weight: bold;
   font-family: sans-serif;
-  letter-spacing: 4vw;
+  letter-spacing: 3vh;
   color: white;
-  padding: 0 75px;
+  padding: 0 2vh;
   text-align: center;
   margin-top: 1vw;
-  line-height: 11vw;
+  line-height: 8vh;
 }

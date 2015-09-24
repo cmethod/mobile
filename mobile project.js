@@ -10,7 +10,7 @@ if (Meteor.isClient) {
   /* Home Template */
 
 
-  Template.projects-desktop.events({
+  Template.projectsDesktop.events({
     'click .test': function(event, template){
       $("#desktopDemo").toggleClass('hide');
       $("#desktopDemo").toggleClass('show');
@@ -29,10 +29,10 @@ if (Meteor.isClient) {
 
   Template.home.onRendered(function() {
     var scene = new THREE.Scene();
-    var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    var camera = new THREE.PerspectiveCamera(75, 400 / 400, 0.1, 800);
     var renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setClearColor( 0xffffff, 0 );
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(300, 300);
     $(".threejscube-container")[0].appendChild(renderer.domElement);
     var geometry = new THREE.BoxGeometry(1, 1, 1);
     var material = new THREE.MeshBasicMaterial({
