@@ -19,13 +19,26 @@
   <paper-drawer-panel id="paperDrawerPanel">
     <div drawer>
       <div class="menu">
-        <div id="menu-heading-projects" paper-drawer-toggle>projects</div>
-          <a href="http://blog.crystalchen.ca"><div id="the-blog" paper-drawer-toggle>the blog</div></a>
-          <a href="/about-me"><div id="about-me" paper-drawer-toggle>about me</div></a>
+        <div id="menu-heading">
+          <a href="/about-me">
+            <div id="about-me" class="linebreak" paper-drawer-toggle>ABOUT ME</div>
+          </a>
+          <div id="menu-heading-projects"  class="linebreak" paper-drawer-toggle>PROJECTS</div>
           <div class="menuOption">
-          <a href="/projects-morningsignout"><div paper-drawer-toggle>morningsignout</div></a>
-          <a href="/projects-desktop"><div paper-drawer-toggle>desktop</div></a>
-        </div>
+            <a href="/projects-morningsignout">
+              <div paper-drawer-toggle>morningsignout</div>
+            </a>
+            <a href="/projects-desktop">
+              <div paper-drawer-toggle>desktop</div>
+            </a>
+          </div>
+          <a href="/contact">
+            <div id="contact"  class="linebreak" paper-drawer-toggle>CONTACT ME</div>
+          </a>
+        <a href="http://blog.crystalchen.ca">
+          <div id="the-blog"  class="linebreak" paper-drawer-toggle>THE BLOG</div>
+        </a>
+      </div>
       </div>
     </div>
     <div main>
@@ -54,11 +67,11 @@
 
 <template name="home">
   <div class="cubeContainer">
-  <a href="/about-me">
-  <div class="threejscube-container">
+    <a href="/freelance">
+      <div class="threejscube-container">
+      </div>
+    </a>
   </div>
-  </a>
-</div>
 </template>
 
 <template name="projects-morningsignout">
@@ -69,7 +82,7 @@
     <div class="msoContainerViewport">
       <p id="about-mso">"science, medicine, for everyone"</p>
       <a href="http://morningsignout.com/author/crystalchen/">
-      <img src="/pictures/morning-sign-out-webpage.png" id="mso-webpage" />
+        <img src="/pictures/morning-sign-out-webpage.png" id="mso-webpage" />
       </a>
     </div>
   </div>
@@ -92,11 +105,76 @@
 
 
 <template name="about-me">
-    <a href="/">
-  <div id="about-me-info">
-   <div>self-learning: web dev. graphic animation.
-     <br><br>
-   B.A. in progress at UCLA</div>
- </div>
- </a>
+  <a href="/">
+    <div id="about-me-info">
+      <div>self-learning: web dev. graphic animation.
+        <br>
+        <br> B.A. in progress at UCLA</div>
+    </div>
+  </a>
+</template>
+
+<template name="freelance">
+  <a href="/">
+    <div id="freelanceContainer">
+      <div id="freelancer">
+        <div>DEVELOPER
+          <br>
+          <br>
+          <span id="smaller-freelance">AngularJS – Meteor PHP, SQL
+            <br>
+            <br> web animations: webGL | threejs
+            <br>
+            <br> game design: Unity3D</span>
+        </div>
+        <div class="fadeout"></div>
+      </div>
+    </div>
+
+  </a>
+</template>
+
+<template name="contact">
+  <div id="contactMeContainer">
+    <form id="contact-me">
+
+    <div class="group">
+      <input type="text" required id="name">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Name</label>
+    </div>
+    <br>
+    <div class="group">
+      <input type="text" required id="emailorphone">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Email or Phone</label>
+    </div>
+    <br>
+    <div class="group">
+      <input type="text" required id="message">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Message</label>
+    </div>
+    <section>
+    <div class="button raised" id="submit-button">
+      <div class="center" fit>SEND</div>
+      <paper-ripple fit></paper-ripple>
+    </div>
+  </section>
+  </form>
+  </div>
+</template>
+
+<template name="submitted">
+  <div class="submittedContainer">
+  <div id="thanksforsubmitting">Thanks for your message! I will receive it shortly and get back to you.
+  </div>
+  <div class="button raised" id="back-button">
+    <div class="center" fit>BACK</div>
+    <paper-ripple fit></paper-ripple>
+  </div>
+</div>
 </template>

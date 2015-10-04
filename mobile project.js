@@ -51,12 +51,40 @@ if (Meteor.isClient) {
   });
 
 
+
+  Template.contact.events({
+  	'click #submit-button':function(e,t){
+      console.log("clicked");
+  		var name = t.find("#name").value;
+  		var emailorphone = t.find("#emailorphone").value;
+  		var message = t.find("#message").value;
+      var emailbody = "from: " + name + "\ncontact: " + emailorphone + "\nmessage: " + message;
+
+      if (name == "" || emailorphone == "" || message == "") {
+        alert("Please complete the form so I can receive your message!")
+      } else {
+        Meteor.call("sendEmail", emailbody);
+        console.log("email sent");
+        $("#contact-me")[0].reset();
+        FlowRouter.go("/submitted")
+      }
+    }
+  });
+
+  Template.submitted.events({
+    'click #back-button':function(){
+      FlowRouter.go("/contact")
+    }
+  })
+
+
+
 }
 
-/*
 if (Meteor.isServer) {
   Meteor.startup(function () {
     // code to run on server at startup
   });
+
+
 }
-*/

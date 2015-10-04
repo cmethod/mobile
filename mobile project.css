@@ -23,7 +23,8 @@ paper-icon-button {
 }
 paper-icon-button.bigWhite {
   color: grey;
-  margin-left: 0px;
+  top: 4px;
+  margin-left: 7px;
   width: 40px;
   height: 40px;
 }
@@ -81,104 +82,70 @@ paper-button {
 .menu {
   position: relative;
 }
-#menu-heading-projects {
-  font-size: 28px;
-  font-family: courier;
-  margin-left: 70px;
-  margin-top: 15px;
+#menu-heading{
+  font-size: 16px;
+  letter-spacing: 1vh;
+  font-family: verdana;
+  text-align: center;
+  margin-top: 15vh;
+}
+.linebreak {
+  border-bottom: 1px solid turquoise;
+  margin: 1vh 3vh 0 3vh;
+  color: turquoise;
+  padding: 2vh 0 2vh 0;
 }
 .menuOption {
-  position: absolute;
-  font-size: 28px;
-  font-family: courier;
-  top:70px;
-  margin-left: 10px;
-  line-height: 60px;
+  font-size: 22px;
+  font-family: verdana;
+  letter-spacing: 4px!important;
+  margin-left: 10px!important;
+  line-height: 60px!important;
+  text-align:left;
 }
 .menuOption a {
   text-decoration: none;
-  color: grey;
+  color: grey!important;
 }
 .menuOption a:visited {
   text-decoration: none;
-  color: grey;
+  color: grey!important;
 }
 .menuOption a:hover {
   text-decoration: none;
-  color: black;
+  color: black!important;
 }
 .menuOption a:focus {
   text-decoration: none;
-  color: black;
+  color: black!important;
 }
 .menuOption a:hover, .navBtn:active {
   text-decoration: none;
-  color: black;
+  color: black!important;
 }
 
-#about-me {
-  position: absolute;
-  font-size: 28px;
-  font-family: courier;
-  margin-left: 70px;
-  margin-top: 350px;
-}
-a #about-me {
+
+#menu-heading a {
   text-decoration: none;
   color: black;
 }
-#about-me a:visited {
+#menu-heading a:visited {
   text-decoration: none;
   color: black;
 }
-#about-me a:hover {
+#menu-heading a:hover {
   text-decoration: none;
   color: grey;
 }
-#about-me a:focus {
+#menu-heading a:focus {
   text-decoration: none;
   color: black;
 }
-#about-me a:hover, .navBtn:active {
+#menu-heading a:hover, .navBtn:active {
   text-decoration: none;
   color: black;
 }
 
-#the-blog {
-  position: absolute;
-  font-size: 28px;
-  font-family: courier;
-  margin-left: 70px;
-  margin-top: 250px;
-}
-a #the-blog {
-  text-decoration: none;
-  color: black;
-}
-#the-blog a:visited {
-  text-decoration: none;
-  color: black;
-}
-#the-blog a:hover {
-  text-decoration: none;
-  color: grey;
-}
-#the-blog a:focus {
-  text-decoration: none;
-  color: black;
-}
-#the-blog a:hover, .navBtn:active {
-  text-decoration: none;
-  color: black;
-}
-.menuOption {
-  position: absolute;
-  font-size: 28px;
-  font-family: courier;
-  top:70px;
-  margin-left: 10px;
-  line-height: 60px;
-}
 .ousideLink {
   text-align: center;
 }
@@ -213,7 +180,7 @@ a #the-blog {
 }
 #work-for-mso {
   font-size: 5vh;
-  font-family: courier;
+  font-family: verdana;
   color: white;
   padding: 0 10px;
   text-align: center;
@@ -221,16 +188,16 @@ a #the-blog {
 }
 #smaller-work-for-mso {
   font-size: 3vh;
-  font-family: courier;
+  font-family: verdana;
   color: white;
-  padding: 0 40px;
+  letter-spacing: 1vh;
   text-align: center;
   margin-top: -4vh;
+  line-height: 5vh;
 }
 
 #about-mso {
   font-size: 16px;
-  font-family: courier;
   color: grey;
   padding: 0 40px;
   text-align: center;
@@ -255,9 +222,9 @@ a #the-blog {
 }
 #about-desktop {
   font-size: 5vh;
-  font-family: courier;
+  font-family: verdana;
+  letter-spacing: 1vh;
   color: white;
-  padding: 0 75px;
   text-align: center;
   margin-top: -45px;
 }
@@ -272,7 +239,7 @@ height: 73vw;
   overflow: auto;
   height: 50vh;
   display: block;
-  top: 6vh;
+  top: 3vh;
 }
 #aboutDesktopDemo {
   position: absolute;
@@ -291,4 +258,184 @@ height: 73vw;
   text-align: center;
   margin-top: 1vw;
   line-height: 8vh;
+}
+#freelanceContainer{
+  overflow: hidden;
+  position: relative;
+    display: flex;
+    justify-content: center;
+}
+#freelancer {
+  overflow:auto;
+  width: 80vw;
+  height: 70vh;
+  font-size: 3.5vh;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 3vh;
+  padding: 0 2vh;
+  text-align: center;
+  margin-top: 1vw;
+  margin: 0 20px;
+  line-height: 7vh;
+  color: white;
+}
+#smaller-freelance {
+  font-size: 3vh;
+  letter-spacing:1vh;
+  line-height: 2vh;
+}
+
+
+input 				{
+  color: white;
+  background-color: transparent;
+  margin-top: 3vh;
+  font-size:3vh;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  font-family: verdana;
+  letter-spacing: 1vh;
+  margin-top: -4vh;
+  left: 3vh;
+  color: white;
+  font-size:2.5vh;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top: 5vh;
+  font-size:2vh;
+  color: grey;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background: cyan;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%;
+  width:100px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+.group{
+  position: relative;
+  display: inline-block;
+}
+#contact-me{
+}
+#contactMeContainer {
+  text-align:center;
+}
+section {
+  padding: 30px 25px;
+  text-align: center;
+  margin-top: 15vh;
+}
+section > * {
+  margin: 10px
+}
+.button {
+  display: inline-block;
+  text-align: center;
+  font-family: verdana;
+  letter-spacing:1vh;
+  position: relative;
+  width: 120px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  background-color: turquoise;
+  color: white;
+}
+.button > paper-ripple {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.button.raised {
+      transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0.2s;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    }
+
+    .button.raised:active {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+      transition-delay: 0s;
+    }
+#thanksforsubmitting {
+  font-size: 5vh;
+  font-family: verdana;
+  letter-spacing: 1vh;
+  color: white;
+  text-align: center;
+  margin: 0 9vh;
+}
+#back-button{
+  top: 6vh;
+}
+.submittedContainer {
+  text-align: center;
 }
