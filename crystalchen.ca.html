@@ -6,6 +6,9 @@
   <link rel="import" href="/bower/paper-button/paper-button.html">
   <link rel="import" href="/bower/paper-drawer-panel/paper-drawer-panel.html">
 
+  <link rel="icon" type="image/png" href="/pictures/favicon.png" sizes="16x16">
+
+
   <style>
 
   </style>
@@ -23,8 +26,14 @@
           <a href="/about-me">
             <div id="about-me" class="linebreak" paper-drawer-toggle>ABOUT ME</div>
           </a>
-          <div id="menu-heading-projects"  class="linebreak" paper-drawer-toggle>PROJECTS</div>
+          <a href="/contact">
+            <div id="contact"  class="linebreak" paper-drawer-toggle>CONTACT ME</div>
+          </a>
+          <div id="menu-heading-projects" class="speciallinkebreak" paper-drawer-toggle>PROJECTS</div>
           <div class="menuOption">
+            <a href="/projects-bruinmobile">
+              <div paper-drawer-toggle>bruin mobile</div>
+            </a>
             <a href="/projects-morningsignout">
               <div paper-drawer-toggle>morningsignout</div>
             </a>
@@ -32,12 +41,6 @@
               <div paper-drawer-toggle>desktop</div>
             </a>
           </div>
-          <a href="/contact">
-            <div id="contact"  class="linebreak" paper-drawer-toggle>CONTACT ME</div>
-          </a>
-        <a href="http://blog.crystalchen.ca">
-          <div id="the-blog"  class="linebreak" paper-drawer-toggle>THE BLOG</div>
-        </a>
       </div>
       </div>
     </div>
@@ -67,20 +70,40 @@
 
 <template name="home">
   <div class="cubeContainer">
-    <a href="/freelance">
+    <a href="/">
       <div class="threejscube-container">
       </div>
     </a>
   </div>
 </template>
 
-<template name="projects-morningsignout">
+<template name="projectsBruinmobile">
+  <div class="bruinmobileContainer">
+    <div id="about-bruinmobile">
+      currently a <br>
+      <span>jr. systems administrator</span>
+      <br>
+      &<span>tech developer (web/mobile)</span>
+      <br> for Bruin Mobile, division of UCLA Student Media
+      <div class="bruin-mobile-viewport">
+        <img src="/pictures/bruin-mobile-website-1.png" id="bruinmobilewebpage" />
+        <img src="/pictures/bruin-mobile-website-2.png" id="bruinmobilewebpage" />
+        <img src="/pictures/bruin-mobile-website-3.png" id="bruinmobilewebpage" />
+        <img src="/pictures/bruin-mobile-website-4.png" id="bruinmobilewebpage" />
+      </div>
+    </div>
+  </div>
+</template>
+
+
+<template name="projectsMorningsignout">
   <div class="msoContainer">
     <p id="smaller-work-for-mso">currently doing</p>
     <p id="work-for-mso">web development </p>
     <div id="smaller-work-for-mso" class='outsideLink'><a href="http://morningsignout.com/author/crystalchen/">for morningsignout.com</a></div>
+    <br><br>
+    <div id="about-mso">"science, medicine, for everyone"</div>
     <div class="msoContainerViewport">
-      <p id="about-mso">"science, medicine, for everyone"</p>
       <a href="http://morningsignout.com/author/crystalchen/">
         <img src="/pictures/morning-sign-out-webpage.png" id="mso-webpage" />
       </a>
@@ -90,47 +113,47 @@
 
 <template name="projectsDesktop">
   <div class="desktopContainer">
-    <div id="about-desktop" class='outsideLink'><a href="http://crystalsproject.meteor.com">desktop playthings demo</a></div>
-    <div class="desktopDemoContainer">
-      <div id="desktopDemo" class="show">
-        <img src="/pictures/webpage-1.png" />
-        <img src="/pictures/webpage-2.png" />
-        <img src="/pictures/animate.png" />
-      </div>
-      <div id="aboutDesktopDemo" class="hide"> a collection made in the month of August 2015
-      </div>
-    </div>
+    <div id="about-desktop" class='outsideLink'><a href="http://crystalsproject.meteor.com">desktop <br>playthings demo</a></div>
+  </div>
+  <br><br>
+  <div id="about-bruinmobile">
+    a collection made in the month of August 2015
+  </div>
+  <div class="desktopDemoViewport">
+      <img src="/pictures/webpage-1.png" />
+      <img src="/pictures/webpage-2.png" />
+      <img src="/pictures/animate.png" />
   </div>
 </template>
 
-
 <template name="about-me">
-  <a href="/">
     <div id="about-me-info">
-      <div>self-learning: web dev. graphic animation.
+      <div>self-learning: <br>web <br>design & dev. <br>web animations.
         <br>
-        <br> B.A. in progress at UCLA</div>
+        <br> Statistics B.S. in progress at UCLA</div>
     </div>
-  </a>
 </template>
 
 <template name="freelance">
-  <a href="/">
+  <a href="/home">
     <div id="freelanceContainer">
       <div id="freelancer">
-        <div>DEVELOPER
+        <span id="smaller-freelance">is a mobile/web</span><br>
+        <span id="condensed-freelance">DESIGNER
+          <br>& DEVELOPER
           <br>
+        </span>
+        <br>
+        <br>
+        <span id="smaller-freelance">using:
+          <br>AngularJS – Meteor
+          <br>PHP, SQL
           <br>
-          <span id="smaller-freelance">AngularJS – Meteor PHP, SQL
-            <br>
-            <br> web animations: webGL | threejs
-            <br>
-            <br> game design: Unity3D</span>
-        </div>
-        <div class="fadeout"></div>
+          <br>learning:
+          <br> (web animations) webGL | threejs
+          <br> (game design) Unity3D</span>
       </div>
     </div>
-
   </a>
 </template>
 

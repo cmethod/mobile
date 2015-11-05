@@ -2,7 +2,7 @@
 body {
   margin: 0;
   background-repeat: no-repeat;
-  background-image: url("/pictures/background-ocean-mobile-dim.jpg");
+  background-image: url("/pictures/background.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -89,8 +89,16 @@ paper-button {
   text-align: center;
   margin-top: 15vh;
 }
+.linebreak:hover{
+  border-bottom: 2px solid darkblue;
+}
 .linebreak {
-  border-bottom: 1px solid turquoise;
+  border-bottom: 2px solid turquoise;
+  margin: 1vh 3vh 0 3vh;
+  color: turquoise;
+  padding: 2vh 0 2vh 0;
+}
+.speciallinkebreak {
   margin: 1vh 3vh 0 3vh;
   color: turquoise;
   padding: 2vh 0 2vh 0;
@@ -99,9 +107,14 @@ paper-button {
   font-size: 22px;
   font-family: verdana;
   letter-spacing: 4px!important;
-  margin-left: 10px!important;
   line-height: 60px!important;
   text-align:left;
+  border-top: 2px solid turquoise;
+  margin: 1vh 3vh 0 3vh;
+  padding: 2vh 0 2vh 0;
+}
+.menuOption:hover {
+  border-top: 2px solid darkblue;
 }
 .menuOption a {
   text-decoration: none;
@@ -171,12 +184,20 @@ paper-button {
 }
 
 .msoContainer {
-  margin-top: 7vw;
+  text-align: center;
 }
 .msoContainerViewport{
   overflow: auto;
-  height: 45vh;
+  height: 30vh;
   text-align: center;
+  display: inline-block;
+  margin-top: 6vh;
+  -webkit-box-shadow: 0px 0px 56px -2px rgba(240,127,127,1);
+  -moz-box-shadow: 0px 0px 56px -2px rgba(240,127,127,1);
+  box-shadow: 0px 0px 56px -2px rgba(240,127,127,1);
+}
+.msoContainerViewport a {
+  display: block;
 }
 #work-for-mso {
   font-size: 5vh;
@@ -184,16 +205,14 @@ paper-button {
   color: white;
   padding: 0 10px;
   text-align: center;
-  margin-top: -3vh;
+  line-height: 0;
 }
 #smaller-work-for-mso {
   font-size: 3vh;
   font-family: verdana;
   color: white;
   letter-spacing: 1vh;
-  text-align: center;
-  margin-top: -4vh;
-  line-height: 5vh;
+  margin: 0 10%;
 }
 
 #about-mso {
@@ -203,89 +222,77 @@ paper-button {
   text-align: center;
   font-family: arial;
   letter-spacing: 9px;
-    color: cornflowerblue;
-    margin-bottom: 9px;
-    padding-top: 5px;
-}
-
-.msoContainer a {
-  display: inline-block;
-  text-align: center;
+  color: cornflowerblue;
+  margin-bottom: 9px;
+  padding-top: 5px;
 }
 #mso-webpage {
-  height: 75%;
-  width: 75%;
+
 }
 .desktopContainer {
-  margin-top:45px;
   text-align: center;
 }
 #about-desktop {
   font-size: 5vh;
   font-family: verdana;
+  margin: 0 10%;
   letter-spacing: 1vh;
   color: white;
   text-align: center;
-  margin-top: -45px;
 }
-.desktopDemoContainer {
-  position: relative;
-  margin: 0 7vw;
-height: 73vw;
-}
-#desktopDemo {
-  position: absolute;
-  text-align: center;
+.desktopDemoViewport {
   overflow: auto;
-  height: 50vh;
+  margin: 5vh 7vw;
+  height: 30vh;
+  -webkit-box-shadow: 0px 0px 56px -2px rgba(240,127,127,1);
+  -moz-box-shadow: 0px 0px 56px -2px rgba(240,127,127,1);
+  box-shadow: 0px 0px 56px -2px rgba(240,127,127,1);
+}
+
+.desktopDemoViewport img {
+  text-align: center;
+  width: 100%;
   display: block;
   top: 3vh;
 }
-#aboutDesktopDemo {
-  position: absolute;
-}
-.desktopContainer img {
-  height: 70%;
-  width: 90%;
-}
 #about-me-info {
-  font-size: 5vh;
+  font-size: 4vh;
   font-weight: bold;
   font-family: sans-serif;
-  letter-spacing: 3vh;
+  letter-spacing: 2vh;
   color: white;
   padding: 0 2vh;
-  text-align: center;
-  margin-top: 1vw;
-  line-height: 8vh;
+  line-height: 6vh;
+  width: 12em;
 }
 #freelanceContainer{
   overflow: hidden;
   position: relative;
     display: flex;
     justify-content: center;
+    margin-top: -3vh;
 }
 #freelancer {
   overflow:auto;
   width: 80vw;
-  height: 70vh;
   font-size: 3.5vh;
-  font-weight: bold;
   font-family: sans-serif;
   letter-spacing: 3vh;
   padding: 0 2vh;
   text-align: center;
   margin-top: 1vw;
   margin: 0 20px;
-  line-height: 7vh;
   color: white;
 }
 #smaller-freelance {
   font-size: 3vh;
   letter-spacing:1vh;
-  line-height: 2vh;
+  line-height: 6vh;
 }
-
+#condensed-freelance {
+  line-height: 0!important;
+  font-weight: bold;
+}
 
 input 				{
   color: white;
@@ -438,4 +445,31 @@ section > * {
 }
 .submittedContainer {
   text-align: center;
+}
+#about-bruinmobile span {
+  font-size: 4vh;
+  font-family: verdana;
+  color: white;
+  padding: 0 10px;
+  text-align: center;
+}
+#about-bruinmobile {
+  font-size: 2.5vh;
+  font-family: verdana;
+  color: white;
+  letter-spacing: 1vh;
+  text-align: center;
+  margin: 0 12vw;
+}
+.bruin-mobile-viewport {
+  overflow: auto;
+  height: 30vh;
+  text-align: center;
+  margin-top: 6vh;
+  -webkit-box-shadow: 0px 0px 56px -2px rgba(240,127,127,1);
+  -moz-box-shadow: 0px 0px 56px -2px rgba(240,127,127,1);
+  box-shadow: 0px 0px 56px -2px rgba(240,127,127,1);
+}
+#bruinmobilewebpage {
+  width: 100%;
 }
